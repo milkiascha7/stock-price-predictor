@@ -7,16 +7,41 @@
     <title>Stock Price Predictor </title>
 </head>
 <body>
-    <h1>Hello World ! </h1>
 
+    <h1>Predictor</h1>
     <form action="/predict/" method="post">
-        <div >
+        <p>Now, you can use the Stock Price Predictor, to predict the stock prices</p>
+        <p></p>
+        <div class="w-full flex flex-col">
             <div class="p-2 w-1/2">
                 <div class="relative">
                     <label for="name" class="leading-7 text-sm text-gray-600">Open</label>
-                    <input type="text" id="open" name="open" class="w-full" />
+                    <input type="text" id="Open" name="Open" class="w-full" />
                 </div>
             </div>
+            
+            <div class="p-2 w-1/2">
+                <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-600">High</label>
+                    <input type="text" id="High" name="High" class="w-full" />
+                </div>
+            </div>
+            
+            <div class="p-2 w-1/2">
+                <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Low</label>
+                    <input type="text" id="Low" name="Low" class="w-full" />
+                </div>
+            </div>
+            
+            <div class="p-2 w-1/2">
+                <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Volume</label>
+                    <input type="text" id="Volume" name="Volume" class="w-full" />
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
             
         </div>
     </form>
